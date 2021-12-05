@@ -3,6 +3,6 @@ const postsController = require('../controllers/posts.controller')
 
 const router = Router();
 
-router.get('/api/v1/posts/hello', postsController.getHello);
+router.get('/api/v1/posts', postsController.getPosts);
 
 module.exports = router;
