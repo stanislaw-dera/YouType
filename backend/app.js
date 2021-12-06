@@ -4,6 +4,7 @@ const port = 3000
 
 const postsRoutes = require('./routes/posts.routes')
 
+app.use(express.json());
 app.use(postsRoutes)
 
 app.listen(port, () => {
