@@ -14,7 +14,7 @@ module.exports.postPost = async (req, res) => {
             title: req.body.title,
             content: req.body.content,
             published: req.body.published,
-            authorId: 1 // authorId will be taken from jwt token in future
+            authorId: req.decodedToken.id
         }
     })
 
